@@ -1,3 +1,14 @@
+Forked this program developed by Jared Atkinson to include in final project portfolio of at least 50 sample c# programs that demonstrate topics discussed in the class. 
+
+## Project components (tasks) for each sample program:
+
+find suitable example programs hopefully written by professional programmers,
+carefully read the program code to figure out (as much as possible) what the program does and how it does it
+document your findings by annotating the code with program comments that demonstrate your understanding of the program
+compile and get the program running... debug it if necessary
+augment the program to better demonstrate its functionality
+capture the program output and append it to the end of your source code
+
 ## Evil Network Connection WMI Provider
 - Returns Netstat like Information when queried
 - Contains a RunPs Method that executes arbitrary PowerShell as System
