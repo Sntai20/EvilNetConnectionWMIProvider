@@ -38,6 +38,7 @@ namespace NetConnectionWMIProvider
             System.Runtime.InteropServices.RegistrationServices RS = new System.Runtime.InteropServices.RegistrationServices();
         }
 
+        // Implements exception handling for removing the MC.
         public override void Uninstall(IDictionary savedState)
         {
 
@@ -61,6 +62,7 @@ namespace NetConnectionWMIProvider
     [ManagementEntity(Name = "Win32_NetConnection")]
     public class NetConnection
     {
+        // Encapsulating the following public strings and ints.
         [ManagementKey]
         public string RemoteAddress { get; set; }
         [ManagementProbe]
@@ -74,7 +76,7 @@ namespace NetConnectionWMIProvider
         [ManagementProbe]
         public string Protocol { get; set; }
 
-
+        // Accepts 5 Tuple information
         public NetConnection(TcpConnectionInformation tcp)
         {
             Protocol = "TCP";
@@ -84,6 +86,8 @@ namespace NetConnectionWMIProvider
             LocalPort = tcp.LocalEndPoint.Port;
             State = tcp.State.ToString();
         }
+
+
         public NetConnection(IPEndPoint ep, string protocol)
         {
             Protocol = protocol;
