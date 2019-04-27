@@ -1,4 +1,4 @@
-Forked this program developed by Jared Atkinson to include in final project portfolio of at least 50 sample c# programs that demonstrate topics discussed in the class. 
+Forked this program, developed by Jared Atkinson, to include in final project portfolio of at least 50 sample c# programs that demonstrate topics discussed in the class. 
 
 ## Project components (tasks) for each sample program:
 
